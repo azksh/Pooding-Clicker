@@ -1,0 +1,14 @@
+Read me 
+
+Anggota : 
+1.	Erva Yanti Daneuis (00000077318)
+2.	Tamara Zumaidah Muhamad Thamrin 
+3.	Hotasi Rogate Manurung 
+
+Aturan permainan yang di terapkan aplikasi:
+
+1. user bisa mendapatkan koin apabila dia meng click karakter pooding. 
+2. user bisa membeli poodingnya apabila koin yang didapatkan telah mencapai harga yang sesuai. 
+3. koin akan berkurang apabila user telah membeli pooding dan beberapa fitur untuk meningkatkan koin. 
+4. apabila anda membeli multiplier cabang pooding akan bertambah sehingga uang kalian akan dilipat gandakan sebanyak cabang yang kalian punya. 
+5. apabila anda membeli auto click, maka auto clicker akan bertambah, harga persatuan auto clicker sama dengan 10, 

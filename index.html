@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <title>Main Game | Pooding Clicker</title>
+</head>
+
+<body>
+
+    <div class="relative">
+        <div class="hero">
+            <div class="d-flex justify-content-between main-navbar">
+                <a class="title" href="./index.html">Pooding CLicker</a>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button id="coin" type="button" class="d-flex justify-content-between align-items-center me-3">
+                        <img src="./img/coin.svg" alt="">
+                        <div id="money" class="mt-2 d-block text-white fs-2">0</div>
+                    </button>
+                    <button id="humburger" type="button">
+                        <img src="./img/menu.svg" alt="">
+                    </button>
+                </div>
+                <ul class="sidenav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div id="timer" class="popup-timer">
+                <p class="count" id="count">
+                    0
+                </p>
+            </div>
+            <div class="main">
+
+                <div class="px-2 justify-content-between align-items-center mt-5 py-5" id="main_page">
+                    <div class="d-flex justify-content-center ">
+                        <div class="m-auto">
+                            <div class="opening_img">
+                                <img src="./img/oppening_character_tittle.gif" alt="" class="img-fluid">
+                            </div>
+                            <div class="mt-5">
+                                <div class="w-100">
+                                    <button id="start" class="cta">
+                                        <img src="./img/button-play.png" alt="">
+                                        <div class="ms-2">START</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="container_game">
+                    <div class="d-flex justify-content-between align-items-center pb-5">
+                        <div class="">
+                            <button class="animated-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p></p>Auto Clicker <p id="auto_click_info" class="mt-2 d-block">0</p>
+                            </button>
+                        </div>
+                        <div class="">
+                            <button class="animated-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p></p>Cabang <p id="cabang_info" class="mt-2 d-block">0</p>
+                            </button>
+                        </div>
+                        <!-- <div id="timer">
+                            <button class="">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <p></p>Cabang <p id="timer_info" class="mt-2 d-block">0</p>
+                            </button>
+                        </div> -->
+                    </div>
+
+                    <div class="d-md-flex px-2 justify-content-between align-items-start mt-5 py-5">
+                        <div class="d-flex justify-content-center ">
+                            <div class="m-auto">
+                                <img id="click_object" src="./img/character_game.gif" alt="" class="character_game"
+                                    style="cursor: pointer;">
+                            </div>
+
+                        </div>
+
+                        <div class="order-md-first ">
+                            <h2 class="text-center px-4">Upgrade Dagangan</h2>
+                            <div class="mb-5">
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="d-flex w-100 justify-content-between mt-2 align-items-center">
+                                        <button id="jual_pooding" class="cta">
+                                            <span>Jual Pooding</span>
+                                        </button>
+                                        <p class="ms-4">500</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="d-flex w-100 justify-content-between mt-2 align-items-center">
+                                        <button id="jual_cendol" class="cta">
+                                            <span>Jual Cendol
+                                        </button>
+                                        <p class="ms-4">40</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="mt-md-0 mt-5">
+                                <div>
+                                    <div class="wrapper">
+                                        <h5>Cost : <span>10</span></h5>
+                                        <button class="cta" id="buy_auto_clicker">
+                                            <span>AUTO CLICK</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="wrapper mt-5">
+                                    <h5>Cost : <span>30</span></h5>
+                                    <button id="buy_multiplier" class="cta">
+                                        <span>BUY MULTIPLIER</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <h1>
+                Welcome to Pooding Clicker
+            </h1>
+        </div>
+
+
+        <div id="modal_auto_clicker">
+            <div class="modal_auto_clicker popup">
+                <h1>Buy Auto Clicker</h1>
+                <p>Are you sure you want to buy this auto clicker with cost <span id="cost_auto_clicker">10</span>?</p>
+                <div class="d-flex justify-content-end align-items-center">
+                    <button class="cancel me-2" id="cancel_buy_auto_clicker">No</button>
+                    <button class="confirm" id="confirm_buy_auto_clicker">Yes</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_multiplier">
+            <div class="modal_multiplier popup">
+                <h1>Buy Multiplier</h1>
+                <p>Are you sure you want to buy this multiplier with cost <span id="cost_multiplier">30</span>?</p>
+                <div class="d-flex justify-content-end align-items-center">
+                    <button class="cancel me-2" id="cancel_buy_multiplier">No</button>
+                    <button class="confirm" id="confirm_buy_multiplier">Yes</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_jual_pooding">
+            <div class="modal_jual_pooding popup">
+                <h1>Jual Pooding</h1>
+                <p>Are you sure you want to sell the pooding with cost <span id="cost_jual_pooding">500</span>?</p>
+                <div class="d-flex justify-content-end align-items-center">
+                    <button class="cancel me-2" id="cancel_jual_pooding">No</button>
+                    <button class="confirm" id="confirm_jual_pooding">Yes</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_jual_cendol">
+            <div class="modal_jual_cendol popup">
+                <h1>Jual cendol</h1>
+                <p>Are you sure you want to sell the cendol with cost <span id="cost_jual_cendol">40</span>?</p>
+                <div class="d-flex justify-content-end align-items-center">
+                    <button class="cancel me-2" id="cancel_jual_cendol">No</button>
+                    <button class="confirm" id="confirm_jual_cendol">Yes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="timer">
+            <div class="popup-timer">
+                <p>Are you sure you want to sell the cendol with cost <span id="cost_jual_cendol">40</span>?</p>
+            </div>
+        </div> -->
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
